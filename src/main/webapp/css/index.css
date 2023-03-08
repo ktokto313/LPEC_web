@@ -1,0 +1,276 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    box-sizing:border-box;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 15px;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.half {
+    width: 50%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.center-div {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.center-text {
+    text-align: center;
+}
+
+.vert-cent {
+    transform: translate(0px, 75%);
+}
+
+svg {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .half {
+        width: 100%;
+    }
+
+    .left, .right {
+        float: none;
+    }
+
+    .vert-cent {
+        transform: translate(0px, 0px);
+    }
+
+    .center-div {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+/* Page heading */
+#page-heading {
+    overflow: hidden;
+    background-color: #f0ebeb;
+    padding: 20px 40px;
+    margin-top: 0px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom: 1px solid #cbcbcb;
+    box-shadow: 0px 0px 10px 5px #cbcbcb;
+}
+
+#page-heading .left {
+    padding: 20px 0px;
+}
+
+#page-heading .right img {
+    margin: 20px 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    #page-heading {
+        padding: 20px 60px;
+    }
+
+    #page-heading .left {
+        text-align: center;
+    }
+
+    #page-heading .right img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.login {
+	display:flex;
+	clear:both;
+	overflow:hidden;
+}
+
+.login .left {
+	padding: 80px 40px;
+	text-align: center;
+	background-color: white;
+}
+
+.login .left * {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0px);
+	border: none;
+	padding: 6px;
+	margin-top: 5px;
+	float: left;
+	clear: both;
+}
+
+.login .left input {
+	background-color: lightgray;
+}
+
+.login .left input[type=submit] {
+	color: white;
+	border-radius: 25px;
+	padding: 10px 20px;
+	background-color: #fc4d36;
+}
+
+.login .left p:first-of-type {
+	color: red;
+}
+
+.login .left div * {
+	float: left;
+	clear: none;
+	left: 0%;
+	transform: translate(0px, 0px);
+}
+
+.login .left div input {
+	transform: translate(0px, 50%);
+}
+
+.login .right {
+	padding: 0px 40px;
+	color: black;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+.login .right * {
+	position:relative;
+	top: 40%;
+	transform: translate(0px, -50%);
+}
+
+@media only screen and (max-width: 768px) {
+	.login .right {
+		display:none;
+	}
+}
+
+/* Section */
+section {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+section .heading {
+    margin-bottom: 40px;
+}
+
+section .header {
+    white-space: nowrap;
+    position: absolute;
+    transform: translate(-50%, -100%);
+    left:50%;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+section .body {
+    margin: 0px 100px;
+}
+
+#previous-button {
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+#next-button {
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+section .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+}
+
+section .grid-container img {
+    width: 100%;
+}
+
+#item-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#item-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#item-3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+#item-4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+section .carousel {
+    position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        margin-top: 30px;
+    }
+
+    section .heading {
+        margin-bottom: 20px;
+    }
+
+    section .header {
+        transform: translate(-50%, -125%);
+    }
+
+    section .body {
+        margin: 0px 50px;
+    }
+
+    section .body * {
+        margin: 5px 5px;
+    }
+}
