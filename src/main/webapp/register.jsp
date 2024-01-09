@@ -12,6 +12,10 @@
 <jsp:include page="header.jsp"/>
 <div class="login center-div center-text">
 	<div class="left half">
+		<h1>Chào mừng!</h1>
+		<p>Để bắt đầu hành trình của bạn, hãy tạo một tài khoản mới</p>
+	</div>
+	<div class="right half">
 		<h1>Đăng kí</h1>
 		<form action="./user" method="post">
 			<input type="hidden" name="action" value="register"> 
@@ -20,10 +24,6 @@
 			<p><%=request.getSession().getAttribute("error") == null ? "" : request.getSession().getAttribute("error")%></p>
 			<input type="submit" value="Tạo tài khoản">
 		</form>
-	</div>
-	<div class="right half">
-		<h1>Chào mừng!</h1>
-		<p>Để bắt đầu hành trình của bạn, hãy tạo một tài khoản mới</p>
 	</div>
 </div>
 <jsp:include page="footer.jsp"/>

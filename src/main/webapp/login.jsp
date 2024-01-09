@@ -30,6 +30,9 @@
 	%>
 	<div class="login center-div center-text">
 		<div class="left half">
+			<image class="center-div" src="./image/homepage1/Group 50.png"/>
+		</div>
+		<div class="right half">
 			<h1>Đăng nhập</h1>
 			<form action="./user" method="post">
 				<input type="hidden" name="action" value="login"> 
@@ -41,12 +44,8 @@
 						for="remember">Nhớ tài khoản</label>
 				</div>
 				<p>Quên mật khẩu?</p>
-				<input type="submit" value="LOGIN">
+				<input type="submit" value="Đăng nhập">
 			</form>
-		</div>
-		<div class="right half">
-			<h1>Chào mừng trở lại!</h1>
-			<p>Hãy đăng nhập để giữ kết nối với mọi người</p>
 		</div>
 	</div>
 	<jsp:include page="footer.jsp"/>

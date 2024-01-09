@@ -80,7 +80,6 @@ public class PostDAO {
 	public ArrayList<Post> getPost(PreparedStatement ps) {
 		ArrayList<Post> al = new ArrayList<>();
 		try {
-			Connection c = dbContext.getConnection();
 			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {
 				Post post = new Post();
@@ -122,7 +121,7 @@ public class PostDAO {
 			String sql = "update comment set Deleted = 1 where ID = ?";
 			PreparedStatement ps = c.prepareStatement(sql);
 			ps.setInt(1, id);
-			ps.execute();
+			ps.executeUpdate();
 			return true;
 		} catch(Exception e) {
 			e.printStackTrace();

@@ -109,8 +109,15 @@ section .body img {
 	margin: 10px 0px;
 }
 
+.comment * {
+	padding: 5px;
+}
+
 .comment p:last-of-type {
 	clear:both;
+	padding: 20px;
+	background-color: #ddead1;
+	border-radius: 25px;
 }
 
 .comment-form {
@@ -121,6 +128,7 @@ section .body img {
 
 .comment-form * {
 	margin: 5px 0px;
+	padding: 5px;
 }
 
 .comment-form input[type=submit] {

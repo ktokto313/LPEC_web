@@ -12,6 +12,6 @@ public class DBContext {
 	
 	public Connection getConnection() throws Exception {
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		return DriverManager.getConnection("jdbc:mysql://" + SERVER + ":"  + HOST + "/" + DATABASE, USERNAME,PASSWORD);
+		return DriverManager.getConnection("jdbc:mysql://" + SERVER + ":"  + HOST + "/" + DATABASE + "?useUnicode=yes&characterEncoding=UTF-8", USERNAME,PASSWORD);
 	}
 }

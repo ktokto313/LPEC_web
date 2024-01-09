@@ -54,6 +54,7 @@ public class LectureController extends HttpServlet {
 		switch(request.getParameter("action")) {
 			case "postComment":
 				Comment comment = new Comment();
+				request.setCharacterEncoding("UTF-8");
 				User user = (User)request.getSession().getAttribute("user");
 				try {
 					comment.setAuthor(user.getUsername());

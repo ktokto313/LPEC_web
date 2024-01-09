@@ -37,7 +37,7 @@ p {
 .center-div {
     position: relative;
     left: 50%;
-    top: 50%;
+    /*top: 50%;*/
     transform: translate(-50%, 0%);
 }
 
@@ -46,7 +46,9 @@ p {
 }
 
 .vert-cent {
-    transform: translate(0px, 75%);
+	position: absolute;
+	top: 40%;
+    transform: translate(0px, -50%);
 }
 
 svg {
@@ -68,6 +70,7 @@ svg {
     }
 
     .vert-cent {
+    	position: static;
         transform: translate(0px, 0px);
     }
 
@@ -81,7 +84,7 @@ svg {
 /* Page heading */
 #page-heading {
     overflow: hidden;
-    background-color: #f0ebeb;
+    background-color: #ddead1;
     padding: 20px 40px;
     margin-top: 0px;
     border-bottom-right-radius: 25px;
@@ -95,21 +98,24 @@ svg {
 }
 
 #page-heading .right img {
-    margin: 20px 20px;
+	height: auto;
+	width: 100%;
+    padding: 20px 0px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 @media only screen and (max-width: 768px) {
     #page-heading {
-        padding: 20px 60px;
+        padding: 20px;
     }
 
     #page-heading .left {
         text-align: center;
     }
-
+    
     #page-heading .right img {
-        height: auto;
-        width: 100%;
+    	padding: 40px 20px;
     }
 }
 
@@ -117,15 +123,21 @@ svg {
 	display:flex;
 	clear:both;
 	overflow:hidden;
+	background-color: #ddead1;
 }
 
-.login .left {
+.login .vert-cent {
+	position: static;
+	margin: auto;
+}
+
+.login .right {
+	margin: auto 0px;
 	padding: 80px 40px;
 	text-align: center;
-	background-color: white;
 }
 
-.login .left * {
+.login .right * {
 	position: relative;
 	left: 50%;
 	transform: translate(-50%, 0px);
@@ -136,48 +148,53 @@ svg {
 	clear: both;
 }
 
-.login .left input {
+.login .right input {
 	background-color: lightgray;
+	border-radius: 25px;
 }
 
-.login .left input[type=submit] {
+.login .right input[type=submit] {
 	color: white;
 	border-radius: 25px;
 	padding: 10px 20px;
 	background-color: #fc4d36;
 }
 
-.login .left p:first-of-type {
-	color: red;
-}
-
-.login .left div * {
+.login .right div * {
 	float: left;
 	clear: none;
 	left: 0%;
 	transform: translate(0px, 0px);
 }
 
-.login .left div input {
+.login .right div input {
 	transform: translate(0px, 50%);
 }
 
-.login .right {
-	padding: 0px 40px;
-	color: black;
-	text-align: center;
-	background-color: #ffffff;
+.login .left {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 200px;
+	padding-right: 100px;
+	margin: auto;
 }
 
-.login .right * {
-	position:relative;
-	top: 40%;
-	transform: translate(0px, -50%);
+.login .left * {
+	height: auto;
+	width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
+	.login {
+		display: block;
+	}
+	
 	.login .right {
-		display:none;
+		padding: 0px;
+	}
+	
+	.login .left {
+		padding: 40px;
 	}
 }
 

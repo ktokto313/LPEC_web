@@ -115,10 +115,6 @@ section .heading {
     margin-bottom: 40px;
 }
 
-section .body {
-    margin: 0px 100px;
-}
-
 section .header {
     white-space: nowrap;
     position: absolute;
@@ -130,7 +126,7 @@ section .header {
 }
 
 section .notification {
-    background-image: linear-gradient(to bottom right, green 10%, white);
+    background-image: linear-gradient(to bottom right, #45853B 0%, #95BB72 100%);
     border-radius: 50px;
     border: 1px black solid;
     margin: 20px 200px;
@@ -149,11 +145,10 @@ section .notification img {
 }
 
 section .notification a {
-    color: black;
+    color: white;
     padding: 2.5px 5px;
     margin-right: 10px;
     text-decoration: none;
-    background-color: lightgray;
     border-radius: 5px;
 }
 
@@ -166,6 +161,7 @@ section .notification p {
 }
 
 section .grid-container {
+	margin: 0px 160px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
@@ -173,10 +169,11 @@ section .grid-container {
 }
 
 section .grid-container .grid-item {
-    padding: 20px;
-    margin: 20px;
+    padding: 40px;
+    margin: 20px 40px;
     border-radius: 25px;
-    border: 1px black solid;
+    /*border: 1px black solid;*/
+    box-shadow: 0px 0px 10px 5px #cbcbcb;
 }
 
 section .grid-container .grid-item img {
@@ -234,7 +231,7 @@ section .grid-container .grid-item p:last-child {
     }
 
     section .body.notification {
-        margin: 20px 60px;
+        margin: 20px 40px;
     }
 
     section .grid-container {
@@ -245,8 +242,9 @@ section .grid-container .grid-item p:last-child {
         padding: 0px;
     }
 
-    section .grid-item {
+    section .grid-container .grid-item {
         display: inline-block;
+        margin: 10px;
         height: inherit;
         white-space: normal;
     }

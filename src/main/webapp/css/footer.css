@@ -1,8 +1,14 @@
 @charset "UTF-8";
 /* Footer */
 footer {
-    background-color: gray;
+    background-color: #ddead1;
     padding: 20px 40px;
+}
+
+footer h2 {
+	width: fit-content;
+	border-bottom: 1px solid black;
+	padding-bottom: 1px;
 }
 
 footer .grid-container {

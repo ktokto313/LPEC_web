@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<jsp:include page="header.jsp"/>
-<body>
 
+<body>
+<jsp:include page="header.jsp"/>
     <!-- Page heading -->
     <section id="page-heading">
         <!-- Right seciton -->
